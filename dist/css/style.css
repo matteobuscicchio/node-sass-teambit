@@ -11,6 +11,7 @@ body {
 }
 
 nav {
+  position: relative;
   height: 80px;
   border-bottom: 1px solid #58402c;
   display: flex;
@@ -45,6 +46,12 @@ nav div button {
 nav div button img {
   position: relative;
   top: 5px;
+}
+nav .hamburger_wrap {
+  display: none;
+}
+nav .hamburger_wrap .fa-bars {
+  cursor: pointer;
 }
 
 .jumbotron {
@@ -107,9 +114,6 @@ nav div button img {
   display: flex;
   justify-content: space-between;
 }
-.traditional .cards_container .card {
-  width: 30%;
-}
 .traditional .cards_container .card img {
   height: 100px;
 }
@@ -150,4 +154,90 @@ footer .link_side .links h3 {
 }
 footer .link_side .links ul {
   list-style: none;
+}
+
+@media all and (max-width: 998px) {
+  nav {
+    margin: 0;
+  }
+  nav div img {
+    margin-left: 20px;
+  }
+  nav div ul {
+    display: none;
+  }
+  nav div button {
+    display: none;
+  }
+  nav .hamburger_wrap {
+    display: block;
+  }
+
+  .jumbotron {
+    padding: 50px 100px;
+    flex-direction: column;
+  }
+  .jumbotron .side_left {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .jumbotron .side_left button {
+    width: 200px;
+    padding: 5px;
+  }
+  .jumbotron .side_right {
+    width: 100%;
+  }
+
+  .traditional {
+    padding: 50px 100px;
+  }
+  .traditional .cards_container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .traditional .card {
+    align-items: center;
+  }
+  .traditional .card img {
+    height: 150px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 50px 100px;
+  }
+  footer .user_advice {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  footer .user_advice img {
+    height: 50px;
+  }
+  footer .link_side {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .link_side .links {
+    width: calc(100% / 3);
+  }
+}
+@media all and (max-width: 550px) {
+  .jumbotron {
+    padding: 50px;
+  }
+
+  .traditional {
+    padding: 50px;
+  }
+
+  footer {
+    padding: 50px;
+  }
+  footer .link_side {
+    justify-content: flex-start;
+  }
 }

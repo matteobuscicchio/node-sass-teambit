@@ -1,0 +1,86 @@
+@media all and (max-width: 998px) {
+    nav {
+        margin: 0;
+        div {
+            img{
+                margin-left: 20px;
+            };
+            ul {
+                display: none;
+            };
+            button {
+                display: none;
+            };
+        };
+        .hamburger_wrap {
+            display: block;
+        }
+    };
+
+    .jumbotron {
+        padding: 50px 100px;
+        flex-direction: column;
+        .side_left {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            button {
+                width: 200px;
+                padding: 5px;
+            };
+        };
+        .side_right {
+            width: 100%;
+        };
+    };
+
+    .traditional{
+        padding: 50px 100px;
+        .cards_container {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        };
+        .card {
+            align-items: center;
+            img {
+                height: 150px;
+            }
+        };
+    };
+
+    footer {
+        flex-direction: column;
+        padding: 50px 100px;
+        .user_advice{
+            width: 100%;
+            margin-bottom: 10px;
+            img {
+                height: 50px;
+            };
+        };
+        .link_side {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .links {
+                width: calc(100% / 3);
+            };
+        };
+    }
+};
+
+@media all and (max-width: 550px) {
+    .jumbotron {
+        padding: 50px;
+    };
+    .traditional{
+        padding: 50px;
+    };
+    footer {
+        padding: 50px;
+        .link_side {
+            justify-content: flex-start;
+        };
+    };
+};
