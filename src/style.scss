@@ -1,0 +1,9 @@
+@import 'partials/_variables.scss';
+@import 'partials/_mixins.scss';
+@import 'partials/_common.scss';
+
+
+// corpo pagina
+@import 'partials/_header.scss';
+@import 'partials/_main.scss'; //è possibile che questo verrà ulteriormente suddiviso
+@import 'partials/_footer.scss';
