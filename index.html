@@ -75,7 +75,25 @@
 
 			<main></main>
 
-			<footer></footer>
+			<footer>
+
+				<div class="user_advice">
+
+					<img src="dist/img/logo-small.svg" alt="teambit smile logo">
+					<a href="">Teambit</a>
+					<p>helps team <br> create high <br> performing cultures <br> by making feedback <br> a daily habit.</p>
+				</div>
+
+				<div class="link_side">
+
+					<div class="links" v-for="section in footer.linkList">
+						<h3>{{section.title}}</h3>
+						<ul>
+							<li v-for="link in section.links">{{link}}</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
 		</div>
 
 		<!-- JS -->

@@ -94,3 +94,31 @@ nav div button img {
 .jumbotron .side_right img {
   width: 100%;
 }
+
+footer {
+  display: flex;
+  padding: 50px 100px;
+}
+footer .user_advice {
+  width: 30%;
+}
+footer .user_advice img {
+  position: relative;
+  top: 5px;
+}
+footer .user_advice a {
+  text-decoration: none;
+}
+footer .link_side {
+  width: 70%;
+  display: flex;
+}
+footer .link_side .links {
+  width: 20%;
+}
+footer .link_side .links h3 {
+  margin-bottom: 30px;
+}
+footer .link_side .links ul {
+  list-style: none;
+}
