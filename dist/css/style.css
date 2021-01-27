@@ -109,6 +109,9 @@ footer .user_advice img {
 footer .user_advice a {
   text-decoration: none;
 }
+footer .user_advice p {
+  display: inline;
+}
 footer .link_side {
   width: 70%;
   display: flex;
